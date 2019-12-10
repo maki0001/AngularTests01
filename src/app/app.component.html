@@ -13,8 +13,10 @@
     <!--［1］テキストボックスtxtNameを変数nameでアクセスできるように-->
     <input id="name" name="name" type="text" #name />
     <!--［2］イベントハンドラーにテキストボックスへの入力値を引き渡す-->
-    <input type="button" value="送信" (click)="onclick(name.value)" />
-    <div>{{name}}</div>
-    <div>{{msg}}</div>
+    <input type="button" value="送信" (click)="onClick(name.value)" />
   </form>
+  <div>
+    <label for="name">ふりがな：</label>
+    {{msg}}
+  </div>
 </div>
